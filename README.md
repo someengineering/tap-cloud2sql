@@ -1,2 +1,2 @@
-# tap-cloud2sql
-Homebrew formula for Cloud2SQL
+# tap
+homebrew tap for all someengineering packages.
