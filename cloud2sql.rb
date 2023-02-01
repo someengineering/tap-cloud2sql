@@ -3,8 +3,8 @@ class Cloud2sql < Formula
 
   desc "Read infrastructure data from your cloud and export it to a SQL database"
   homepage "https://github.com/someengineering/cloud2sql"
-  url "https://files.pythonhosted.org/packages/20/b1/aefb2b1f00a39fee996371d73034dbbcf8326c06751f4c99f5b55f6c84be/cloud2sql-0.7.1.tar.gz"
-  sha256 "e9cec3418806471ec3bff3465b5aaab63e40af2d56c3965e57a2275152027628"
+  url "https://files.pythonhosted.org/packages/77/be/b875ec0ae62f0034330ba5f8cdcd5eb5eca8ebd86fb902370b83d13060de/cloud2sql-0.7.2.tar.gz"
+  sha256 "9d8f09f62951e58721365c50792db76eac7432d140fcd267651857d48700a138"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
