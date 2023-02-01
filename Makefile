@@ -1,5 +1,8 @@
-.DEFAULT_GOAL := cloud2sql, resotoshell
+.DEFAULT_GOAL := all
 .SILENT: cloud2sql, resotoshell
+.PHONY: cloud2sql, resotoshell
+
+all: cloud2sql resotoshell
 
 cloud2sql:
 	# create a separate venv for homebrew
