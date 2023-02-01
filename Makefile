@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := cloud2sql
+.DEFAULT_GOAL := cloud2sql, resotoshell
 .SILENT: cloud2sql, resotoshell
 
 cloud2sql:
