@@ -3,8 +3,8 @@ class Cloud2sql < Formula
 
   desc "Read infrastructure data from your cloud and export it to a SQL database"
   homepage "https://github.com/someengineering/cloud2sql"
-  url "https://files.pythonhosted.org/packages/48/3d/348822e5f5ea23dcd08d671e569a6d5fe40ee97bdfd585aa355c5cb282c9/cloud2sql-0.7.0.tar.gz"
-  sha256 "bd3ed0ffc4db13a0d855bc7c68841901ea54647023a27d1424914a255d9b0a58"
+  url "https://files.pythonhosted.org/packages/20/b1/aefb2b1f00a39fee996371d73034dbbcf8326c06751f4c99f5b55f6c84be/cloud2sql-0.7.1.tar.gz"
+  sha256 "e9cec3418806471ec3bff3465b5aaab63e40af2d56c3965e57a2275152027628"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -245,8 +245,8 @@ class Cloud2sql < Formula
   end
 
   resource "posthog" do
-    url "https://files.pythonhosted.org/packages/3c/35/cc3767c2a1fa20fc55b8b9b4fdcd4eeea15b3d019a3a1a89d78c04c77100/posthog-2.2.0.tar.gz"
-    sha256 "1f450a20f7bed217874ded234f6ffc24ae73da37a16aa5bf76335249b34a9f60"
+    url "https://files.pythonhosted.org/packages/74/33/93cd20d730a81dc786a375fc1d84293b08e3bcf26273e8e6a9dcf9e04a9e/posthog-2.3.0.tar.gz"
+    sha256 "906ce912caa7f307ec8d32a88283203e96da6e4fd86e65ba7503994c5c484ac9"
   end
 
   resource "prometheus-client" do
