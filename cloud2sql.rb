@@ -3,8 +3,8 @@ class Cloud2sql < Formula
 
   desc "Read infrastructure data from your cloud and export it to a SQL database"
   homepage "https://github.com/someengineering/cloud2sql"
-  url "https://files.pythonhosted.org/packages/94/6d/99e25dc273664f164da6d035e7d36dc3f8fb72753215520f7a8f743b789b/cloud2sql-0.8.0.tar.gz"
-  sha256 "4d9de21b20d1806643ec2b65e9489008adf01f72a0de40c9c3baaa4472e174bb"
+  url "https://files.pythonhosted.org/packages/aa/20/108db3dc4ce16d0f21054e2bd53a432294406e6d3678af32ec7a538f8ae7/cloud2sql-0.8.1.tar.gz"
+  sha256 "a77e7f2f7de4f5a84b6df42b651bbc48d106ac1be8b5ad89de6adc2003eb01e2"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -45,13 +45,13 @@ class Cloud2sql < Formula
   end
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/0e/02/81bd7180ff57cbd8351f00f5dc701481f1b8b843d6ba9067922fcb99e1f6/boto3-1.26.61.tar.gz"
-    sha256 "78d75f6a08c33618d9ce37acca78e4f80e316a8ce3ac040c562f8054afe6451e"
+    url "https://files.pythonhosted.org/packages/18/5b/c8b6ae6be553d1ed09e5a4f4b750a866e3b3ef53325ee851b0525ca9c9cd/boto3-1.26.114.tar.gz"
+    sha256 "b10324d452fe677d6e1005b650ae11158cf21310e0c0062b00d184b352f4196b"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/54/cf/bb7f7951cc9e2c01b4c1f02dc1ac27721e9045b3f0a50386f2292ba6fac2/botocore-1.29.61.tar.gz"
-    sha256 "22ead51f900e3465d0e4e670d02d091e613c88be8b333c47bfda727f8988eef3"
+    url "https://files.pythonhosted.org/packages/0c/3b/37aa84d8a9cd56fdc229257e68c2400bc4fa34d87d46ff16646add03e4f4/botocore-1.29.114.tar.gz"
+    sha256 "aeacb03303d6babb0490247158647346d27900fcf89bfb9713db41f1ce1cc93f"
   end
 
   resource "Brotli" do
@@ -95,13 +95,8 @@ class Cloud2sql < Formula
   end
 
   resource "cryptography" do
-    url "https://files.pythonhosted.org/packages/6a/f5/a729774d087e50fffd1438b3877a91e9281294f985bda0fd15bf99016c78/cryptography-39.0.1.tar.gz"
-    sha256 "d1f6198ee6d9148405e49887803907fe8962a23e6c6f83ea7d98f1c0de375695"
-  end
-
-  resource "exceptiongroup" do
-    url "https://files.pythonhosted.org/packages/15/ab/dd27fb742b19a9d020338deb9ab9a28796524081bca880ac33c172c9a8f6/exceptiongroup-1.1.0.tar.gz"
-    sha256 "bcb67d800a4497e1b404c2dd44fca47d3b7a5e5433dbab67f96c1a685cdfdf23"
+    url "https://files.pythonhosted.org/packages/f7/80/04cc7637238b78f8e7354900817135c5a23cf66dfb3f3a216c6d630d6833/cryptography-40.0.2.tar.gz"
+    sha256 "c33c0d32b8594fa647d2e01dbccc303478e16fdd7cf98652d5b3ed11aa5e5c99"
   end
 
   resource "frozenlist" do
@@ -115,13 +110,13 @@ class Cloud2sql < Formula
   end
 
   resource "google-api-python-client" do
-    url "https://files.pythonhosted.org/packages/ab/16/c6b8e041f2d9f6aebc6cbdd6451e029d3c10ff5180a7fc70823279aa6419/google-api-python-client-2.75.0.tar.gz"
-    sha256 "0f109a2b71f14c9a7b48231fecfcdd3ab95861ea9abf54f060ac45c204fadc3d"
+    url "https://files.pythonhosted.org/packages/ae/ef/81769edd4b013fc90acd1d0878b1e6a9708b3b821122bda7a730b4a0d4d5/google-api-python-client-2.85.0.tar.gz"
+    sha256 "07b21ef21a542dd69cd7c09817a6079b2769cc2a791981402e8f0fcdb2d47f90"
   end
 
   resource "google-auth" do
-    url "https://files.pythonhosted.org/packages/09/be/56d3c1db93d85e53ffa4eb26a2f41b0df9ba00317ee1f253121c63489d03/google-auth-2.16.2.tar.gz"
-    sha256 "07e14f34ec288e3f33e00e2e3cc40c8942aa5d4ceac06256a28cd8e786591420"
+    url "https://files.pythonhosted.org/packages/b3/56/7d367cbce23368b5d75d62dca0d3994b3c59e9e4038ae3303ab17984dcce/google-auth-2.17.3.tar.gz"
+    sha256 "ce311e2bc58b130fddf316df57c9b3943c2a7b4f6ec31de9663a9333e4064efc"
   end
 
   resource "google-auth-httplib2" do
@@ -130,13 +125,13 @@ class Cloud2sql < Formula
   end
 
   resource "googleapis-common-protos" do
-    url "https://files.pythonhosted.org/packages/41/43/613cbd071413f6b2a3427f905bc8a8f0f3da202a6e715d78aa22b1f35271/googleapis-common-protos-1.58.0.tar.gz"
-    sha256 "c727251ec025947d545184ba17e3578840fc3a24a0516a020479edab660457df"
+    url "https://files.pythonhosted.org/packages/9a/19/02a6256e00653b0fec9f356678df0ed996cb9d89aeb472c8c4df9490cac0/googleapis-common-protos-1.59.0.tar.gz"
+    sha256 "4168fcb568a826a52f23510412da405abd93f4d23ba544bb68d943b14ba3cb44"
   end
 
   resource "httplib2" do
-    url "https://files.pythonhosted.org/packages/c2/37/a093aaa902f6b2301f0f2cff5285548dbc4ab9b9a29215eb440381cbb32b/httplib2-0.21.0.tar.gz"
-    sha256 "fc144f091c7286b82bec71bdbd9b27323ba709cc612568d3000893bfd9cb4b34"
+    url "https://files.pythonhosted.org/packages/3d/ad/2371116b22d616c194aa25ec410c9c6c37f23599dcd590502b74db197584/httplib2-0.22.0.tar.gz"
+    sha256 "d7a10bc5ef5ab08322488bde8c726eeee5c8618723fdb399597ec58f3d82df81"
   end
 
   resource "idna" do
@@ -145,18 +140,13 @@ class Cloud2sql < Formula
   end
 
   resource "inflect" do
-    url "https://files.pythonhosted.org/packages/dd/34/0faab1eb3b2f30f1ed074672f21d39fbfd9ee780e9f16e28ca8bfc5e646f/inflect-6.0.2.tar.gz"
-    sha256 "f1a6bcb0105046f89619fde1a7d044c612c614c2d85ef182582d9dc9b86d309a"
-  end
-
-  resource "jaraco.classes" do
-    url "https://files.pythonhosted.org/packages/bf/02/a956c9bfd2dfe60b30c065ed8e28df7fcf72b292b861dca97e951c145ef6/jaraco.classes-3.2.3.tar.gz"
-    sha256 "89559fa5c1d3c34eff6f631ad80bb21f378dbcbb35dd161fd2c6b93f5be2f98a"
+    url "https://files.pythonhosted.org/packages/3b/9b/6e44523788cadec2a2bef2632c21264a74ab172cf9a13fab5c94b10db7f2/inflect-6.0.4.tar.gz"
+    sha256 "1842649a17b6cad66812a5c9bdfacb6310e1e7b6dd8a31f026766df1b62612eb"
   end
 
   resource "jaraco.collections" do
-    url "https://files.pythonhosted.org/packages/24/93/a376f84808cae648d2fec5c844fc68321adaa01d612203d025df56446144/jaraco.collections-3.8.0.tar.gz"
-    sha256 "56304fd4bd4eb8d585ce0cace0ac80418791b140851e374812541b0aa27c91d0"
+    url "https://files.pythonhosted.org/packages/39/5f/3d235b6c12b117c7bc0d96a2bc6ab6bdac00567f8e595729a0cfe14994a7/jaraco.collections-4.1.0.tar.gz"
+    sha256 "4f5a36aa6aa196dc13a9d0575aa442e9fedab664b9b12e83810f2333ef6c3e57"
   end
 
   resource "jaraco.context" do
@@ -185,8 +175,8 @@ class Cloud2sql < Formula
   end
 
   resource "kubernetes" do
-    url "https://files.pythonhosted.org/packages/e5/c7/cc2b5e62216f5e18c8e27b1ae672684ce147e34b2738a4b251023dc4e9bb/kubernetes-25.3.0.tar.gz"
-    sha256 "213befbb4e5aed95f94950c7eed0c2322fc5a2f8f40932e58d28fdd42d90836c"
+    url "https://files.pythonhosted.org/packages/34/19/2f351c0eaf05234dc33a6e0ffc7894e9dedab0ff341311c5b4ba44f2d8ac/kubernetes-26.1.0.tar.gz"
+    sha256 "5854b0c508e8d217ca205591384ab58389abdae608576f9c9afc35a3c76a366c"
   end
 
   resource "markdown-it-py" do
@@ -215,8 +205,8 @@ class Cloud2sql < Formula
   end
 
   resource "networkx" do
-    url "https://files.pythonhosted.org/packages/99/f9/d45c9ecf50a6b67a200e0bbd324201b5cd777dfc0e6c8f6d1620ce5a7ada/networkx-3.0.tar.gz"
-    sha256 "9a9992345353618ae98339c2b63d8201c381c2944f38a2ab49cb45a4c667e412"
+    url "https://files.pythonhosted.org/packages/fd/a1/47b974da1a73f063c158a1f4cc33ed0abf7c04f98a19050e80c533c31f0c/networkx-3.1.tar.gz"
+    sha256 "de346335408f84de0eada6ff9fafafff9bcda11f0a0dfaa931133debb146ab61"
   end
 
   resource "oauth2client" do
@@ -230,8 +220,8 @@ class Cloud2sql < Formula
   end
 
   resource "parsy" do
-    url "https://files.pythonhosted.org/packages/70/96/ba47d2f91e3375cfcae1cf7f90b6c2b043e6e15b76a0dd2f75a0849391de/parsy-2.0.tar.gz"
-    sha256 "7fd36ce0ebb0b80d969d39975038172de95ba212d9f0e1e73d8d51bf284f4524"
+    url "https://files.pythonhosted.org/packages/53/ea/e0853951be3b3e0ca41f962971816065b671ac88e257b99abcd0879198ce/parsy-2.1.tar.gz"
+    sha256 "fd5dd18d7b0b61f8275ee88665f430a20c02cf5a82d88557f35330530186d7ac"
   end
 
   resource "Pint" do
@@ -245,8 +235,8 @@ class Cloud2sql < Formula
   end
 
   resource "posthog" do
-    url "https://files.pythonhosted.org/packages/ba/35/d61fecb7f507e2e76bd9e85e32271b3b4924947a387925fac7c12d324bd5/posthog-2.3.1.tar.gz"
-    sha256 "9bd445a762e5fd55142862689e1841046df15e6378e7e8455c2f62aced0053d3"
+    url "https://files.pythonhosted.org/packages/c3/d5/73ca8157b8f7554b5aa5561c240315af6d25a335555c276a9232700da147/posthog-3.0.1.tar.gz"
+    sha256 "57d2791ff5752ce56ba0f9bb8876faf3ca9208f1c2c6ceaeb5a2504c34493767"
   end
 
   resource "prometheus-client" do
@@ -255,8 +245,8 @@ class Cloud2sql < Formula
   end
 
   resource "protobuf" do
-    url "https://files.pythonhosted.org/packages/4a/e0/9da6a25f4ac72455f5da9d4af8d75144d15e29d415220773850e0ec23d3e/protobuf-4.22.1.tar.gz"
-    sha256 "dce7a55d501c31ecf688adb2f6c3f763cf11bc0be815d1946a84d74772ab07a7"
+    url "https://files.pythonhosted.org/packages/e2/86/44a1e4990a81cb4248a2091a182bb76a6417fddcaff560ceb6b44eb05c55/protobuf-4.22.3.tar.gz"
+    sha256 "23452f2fdea754a8251d0fc88c0317735ae47217e0d27bf330a30eec2848811a"
   end
 
   resource "psutil" do
@@ -265,13 +255,13 @@ class Cloud2sql < Formula
   end
 
   resource "pyasn1" do
-    url "https://files.pythonhosted.org/packages/a4/db/fffec68299e6d7bad3d504147f9094830b704527a7fc098b721d38cc7fa7/pyasn1-0.4.8.tar.gz"
-    sha256 "aef77c9fb94a3ac588e87841208bdec464471d9871bd5050a287cc9a475cd0ba"
+    url "https://files.pythonhosted.org/packages/61/ef/945a8bcda7895717c8ba4688c08a11ef6454f32b8e5cb6e352a9004ee89d/pyasn1-0.5.0.tar.gz"
+    sha256 "97b7290ca68e62a832558ec3976f15cbf911bf5d7c7039d8b861c2a0ece69fde"
   end
 
   resource "pyasn1-modules" do
-    url "https://files.pythonhosted.org/packages/88/87/72eb9ccf8a58021c542de2588a867dbefc7556e14b2866d1e40e9e2b587e/pyasn1-modules-0.2.8.tar.gz"
-    sha256 "905f84c712230b2c592c19470d3ca8d552de726050d1d1716282a1f6146be65e"
+    url "https://files.pythonhosted.org/packages/3b/e4/7dec823b1b5603c5b3c51e942d5d9e65efd6ff946e713a325ed4146d070f/pyasn1_modules-0.3.0.tar.gz"
+    sha256 "5bd01446b736eb9d31512a30d46c1ac3395d676c6f3cafa4c03eb54b9925631c"
   end
 
   resource "pycares" do
@@ -285,13 +275,13 @@ class Cloud2sql < Formula
   end
 
   resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/8b/87/200171b36005368bc4c114f01cb9e8ae2a3f3325a47da8c710cc58cfd00c/pydantic-1.10.6.tar.gz"
-    sha256 "cf95adb0d1671fc38d8c43dd921ad5814a735e7d9b4d9e437c088002863854fd"
+    url "https://files.pythonhosted.org/packages/43/5f/e53a850fd32dddefc998b6bfcbda843d4ff5b0dcac02a92e414ba6c97d46/pydantic-1.10.7.tar.gz"
+    sha256 "cfc83c0678b6ba51b0532bea66860617c4cd4251ecf76e9846fa5a9f3454e97e"
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/da/6a/c427c06913204e24de28de5300d3f0e809933f376e0b7df95194b2bb3f71/Pygments-2.14.0.tar.gz"
-    sha256 "b3ed06a9e8ac9a9aae5a6f5dbe78a8a58655d17b43b93c078f094ddc476ae297"
+    url "https://files.pythonhosted.org/packages/89/6b/2114e54b290824197006e41be3f9bbe1a26e9c39d1f5fa20a6d62945a0b3/Pygments-2.15.1.tar.gz"
+    sha256 "8ace4d3c1dd481894b2005f560ead0f9f19ee64fe983366be1a21e171d12775c"
   end
 
   resource "PyJWT" do
@@ -310,8 +300,8 @@ class Cloud2sql < Formula
   end
 
   resource "pytz" do
-    url "https://files.pythonhosted.org/packages/03/3e/dc5c793b62c60d0ca0b7e58f1fdd84d5aaa9f8df23e7589b39cc9ce20a03/pytz-2022.7.1.tar.gz"
-    sha256 "01a0681c4b9684a28304615eba55d1ab31ae00bf68ec157ec3708a8182dbbcd0"
+    url "https://files.pythonhosted.org/packages/5e/32/12032aa8c673ee16707a9b6cdda2b09c0089131f35af55d443b6a9c69c1d/pytz-2023.3.tar.gz"
+    sha256 "1d8ce29db189191fb55338ee6d0387d82ab59f3d00eac103412d64e0ebd0c588"
   end
 
   resource "pytz-deprecation-shim" do
@@ -335,23 +325,23 @@ class Cloud2sql < Formula
   end
 
   resource "resoto-plugin-aws" do
-    url "https://files.pythonhosted.org/packages/1a/39/437d9be110e4603a70a7761ecd9f693f182b560d382a80f26f396fb62a1e/resoto-plugin-aws-3.2.5.tar.gz"
-    sha256 "e39907284040481f14382b88d5139185e6d5e2ca83bdd8c819cf58b7ba79bac6"
+    url "https://files.pythonhosted.org/packages/e5/53/d0983ef3792e36b0b75c82564e1b2150449766d5a0ee82e9279ba8bbff69/resoto-plugin-aws-3.3.3.tar.gz"
+    sha256 "1f4541862a54294a138a8d52029d9f11383745a01353901105962b4f1eb8cb5d"
   end
 
   resource "resoto-plugin-digitalocean" do
-    url "https://files.pythonhosted.org/packages/05/0c/2673debd9bd22f59e1def21f0192d7c3465c8b293219ed540abcf9751617/resoto-plugin-digitalocean-3.2.5.tar.gz"
-    sha256 "e1f72b02758b715f9fb5dec13f5e5a7a6090a49097462c09e2dea7a17cd77a5e"
+    url "https://files.pythonhosted.org/packages/96/7d/dd9b8d64f86d6d32b67952212c938f60277975fc95d80a7efb58a39a297b/resoto-plugin-digitalocean-3.3.3.tar.gz"
+    sha256 "1027cc44cc5e5294afdd5ca525133dddee11ab9f9dae30244e92de5649088bd8"
   end
 
   resource "resoto-plugin-gcp" do
-    url "https://files.pythonhosted.org/packages/c7/06/d97bc4f62906fdeeb999f263c64b2132c8bcd0043587502201ec17912f0d/resoto-plugin-gcp-3.2.5.tar.gz"
-    sha256 "630ae9ab9568bf6fe5b6794b2d475427f2acb22e336e6cc817e0fd0e54c8eb0b"
+    url "https://files.pythonhosted.org/packages/0c/3f/1efffcb18b597bf0b54813b7193ce09551ce7e990155829ac41fdf714fa7/resoto-plugin-gcp-3.3.3.tar.gz"
+    sha256 "d5822add3375e5b0a1c129b38eafbf0d45da6a475d4b7eb727658e14fd933ba8"
   end
 
   resource "resoto-plugin-k8s" do
-    url "https://files.pythonhosted.org/packages/df/ac/11e1f8e899c8e1114bb714fa935bb78fbea1eccd35d6addfdc9cc5d0629b/resoto-plugin-k8s-3.2.5.tar.gz"
-    sha256 "c84701bac7fdcf3256379104529f78717f8eb4346e3609399e91dd97dbadc3dd"
+    url "https://files.pythonhosted.org/packages/f0/52/6ffc72a8083dd76633f3605606fbfbe8727aa485546be7d2429fa1f8c455/resoto-plugin-k8s-3.3.3.tar.gz"
+    sha256 "0762ede9b7498becd56e14072c15a33bb735f0d6ed8657c7729501cf5659880e"
   end
 
   resource "resotoclient" do
@@ -360,8 +350,8 @@ class Cloud2sql < Formula
   end
 
   resource "resotolib" do
-    url "https://files.pythonhosted.org/packages/1d/02/d70c050c1193c9b6afa9918d90fc3b0839e2e89793f5a18b1f6f1aa7abb6/resotolib-3.2.5.tar.gz"
-    sha256 "f254730b6570277994c3662295aebd1448b60d4666bf49fc8db865092e9c8740"
+    url "https://files.pythonhosted.org/packages/f1/b2/fc61cc381988f70c31ca5bd21560e60d0612a0a9375e9384a46282244953/resotolib-3.3.3.tar.gz"
+    sha256 "3411be5e919d0903dc21e0cff34cffe00f0bdb94496ab1abd4a8ada64423e443"
   end
 
   resource "retrying" do
@@ -370,8 +360,8 @@ class Cloud2sql < Formula
   end
 
   resource "rich" do
-    url "https://files.pythonhosted.org/packages/5e/0e/ef0a49be56dbc4052a086888cd2490e15fcc95b0eda79e9d0e737b1ab93d/rich-13.3.2.tar.gz"
-    sha256 "91954fe80cfb7985727a467ca98a7618e5dd15178cc2da10f553b36a93859001"
+    url "https://files.pythonhosted.org/packages/31/3b/2360352760b436f822258396e66ffb6d42585518a9cde2f93f142e64c5eb/rich-13.3.4.tar.gz"
+    sha256 "b5d573e13605423ec80bdd0cd5f8541f7844a0e71a13f74cf454ccb2f490708b"
   end
 
   resource "rsa" do
@@ -395,18 +385,18 @@ class Cloud2sql < Formula
   end
 
   resource "tempora" do
-    url "https://files.pythonhosted.org/packages/03/01/ab56dcb400513c6d1658d177cc68c83bc4e6ce5624dff717e4bf4a1f8b00/tempora-5.2.1.tar.gz"
-    sha256 "b7176486c5948a75201e8d0b21ef2c23ca808474060df47218c92295bdce5276"
+    url "https://files.pythonhosted.org/packages/1c/32/963e37d9ad64582b822b8bf3288ac135ede936e5c8fe1c71da74164f0974/tempora-5.2.2.tar.gz"
+    sha256 "98ee27bc528c91a236f9a5d612ede4ef391b01f7862bf11b483ce549053651c1"
   end
 
   resource "tenacity" do
-    url "https://files.pythonhosted.org/packages/ae/9c/ce67f96abe7c7530173e746b4f16a0bc5b4fa962ea1080d80cc5757dd210/tenacity-8.1.0.tar.gz"
-    sha256 "e48c437fdf9340f5666b92cd7990e96bc5fc955e1298baf4a907e3972067a445"
+    url "https://files.pythonhosted.org/packages/d3/f0/6ccd8854f4421ce1f227caf3421d9be2979aa046939268c9300030c0d250/tenacity-8.2.2.tar.gz"
+    sha256 "43af037822bd0029025877f3b2d97cc4d7bb0c2991000a3d59d71517c5c969e0"
   end
 
   resource "typeguard" do
-    url "https://files.pythonhosted.org/packages/3a/38/c61bfcf62a7b572b5e9363a802ff92559cb427ee963048e1442e3aef7490/typeguard-2.13.3.tar.gz"
-    sha256 "00edaa8da3a133674796cf5ea87d9f4b4c367d77476e185e80251cc13dfbb8c4"
+    url "https://files.pythonhosted.org/packages/af/40/3398497c6e6951c92abaf933492d6633e7ac4df0bfc9d81f304b3f977f15/typeguard-3.0.2.tar.gz"
+    sha256 "fee5297fdb28f8e9efcb8142b5ee219e02375509cd77ea9d270b5af826358d5a"
   end
 
   resource "typing-extensions" do
@@ -420,13 +410,13 @@ class Cloud2sql < Formula
   end
 
   resource "tzdata" do
-    url "https://files.pythonhosted.org/packages/5b/30/b7abfb11be6642d26de1c1840d25e8d90333513350ad0ebc03101d55e13b/tzdata-2022.7.tar.gz"
-    sha256 "fe5f866eddd8b96e9fcba978f8e503c909b19ea7efda11e52e39494bad3a7bfa"
+    url "https://files.pythonhosted.org/packages/70/e5/81f99b9fced59624562ab62a33df639a11b26c582be78864b339dafa420d/tzdata-2023.3.tar.gz"
+    sha256 "11ef1e08e54acb0d4f95bdb1be05da659673de4acbd21bf9c69e94cc5e907a3a"
   end
 
   resource "tzlocal" do
-    url "https://files.pythonhosted.org/packages/7d/b9/164d5f510e0547ae92280d0ca4a90407a15625901afbb9f57a19d9acd9eb/tzlocal-4.2.tar.gz"
-    sha256 "ee5842fa3a795f023514ac2d801c4a81d1743bbe642e3940143326b3a00addd7"
+    url "https://files.pythonhosted.org/packages/39/97/b15b711a10d0774390404bec9712b2647b0b53a4da50a08acf7d7e51e284/tzlocal-4.3.tar.gz"
+    sha256 "3f21d09e1b2aa9f2dacca12da240ca37de3ba5237a93addfd6d593afe9073355"
   end
 
   resource "uritemplate" do
@@ -435,8 +425,8 @@ class Cloud2sql < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/c5/52/fe421fb7364aa738b3506a2d99e4f3a56e079c0a798e9f4fa5e14c60922f/urllib3-1.26.14.tar.gz"
-    sha256 "076907bf8fd355cde77728471316625a4d2f7e713c125f51953bb5b3eecf4f72"
+    url "https://files.pythonhosted.org/packages/21/79/6372d8c0d0641b4072889f3ff84f279b738cd8595b64c8e0496d4e848122/urllib3-1.26.15.tar.gz"
+    sha256 "8a388717b9476f934a21484e8c8e61875ab60644d29b9b39e11e4b9dc1c6b305"
   end
 
   resource "websocket-client" do
@@ -445,8 +435,8 @@ class Cloud2sql < Formula
   end
 
   resource "yarl" do
-    url "https://files.pythonhosted.org/packages/c4/1e/1b204050c601d5cd82b45d5c8f439cb6f744a2ce0c0a6f83be0ddf0dc7b2/yarl-1.8.2.tar.gz"
-    sha256 "49d43402c6e3013ad0978602bf6bf5328535c48d192304b91b97a3c6790b1562"
+    url "https://files.pythonhosted.org/packages/ed/02/695dd9ec40214fbad98ffc82e97bbe15d99cb798b837c5af38b5649a20cd/yarl-1.9.1.tar.gz"
+    sha256 "5ce0bcab7ec759062c818d73837644cde567ab8aa1e0d6c45db38dfb7c284441"
   end
 
   resource "zc.lockfile" do
