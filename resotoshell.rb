@@ -3,8 +3,8 @@ class Resotoshell < Formula
 
   desc "Resoto command line shell"
   homepage "https://github.com/someengineering/resoto/tree/main/resotoshell"
-  url "https://files.pythonhosted.org/packages/e9/81/fd7e7e85dd8ecf7e471dea7cd48f3223b6041078605c61a63f897f12f1d7/resotoshell-3.3.3.tar.gz"
-  sha256 "e114cc1e2a23224112262860e1cb1bf1fa104b56ca340aaa8cd93b8d824bf7ad"
+  url "https://files.pythonhosted.org/packages/18/1b/17a234edf1ee62a3eac3115be778df333a1e949f6e50dc92e28ccc9d8d68/resotoshell-3.4.2.tar.gz"
+  sha256 "eb3b3f8359f7a2d76f5e9c2776fac9b3b7ead2882860d0e980aaa96186cfde3d"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -50,8 +50,8 @@ class Resotoshell < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/37/f7/2b1b0ec44fdc30a3d31dfebe52226be9ddc40cd6c0f34ffc8923ba423b69/certifi-2022.12.7.tar.gz"
-    sha256 "35824b4c3a97115964b408844d64aa14db1cc518f6562e8d7261699d1350a9e3"
+    url "https://files.pythonhosted.org/packages/93/71/752f7a4dd4c20d6b12341ed1732368546bc0ca9866139fe812f6009d9ac7/certifi-2023.5.7.tar.gz"
+    sha256 "0f0d56dc5a6ad56fd4ba36484d6cc34451e1c6548c61daad8c320169f91eddc7"
   end
 
   resource "cffi" do
@@ -65,8 +65,8 @@ class Resotoshell < Formula
   end
 
   resource "cheroot" do
-    url "https://files.pythonhosted.org/packages/8c/e7/8e6387d59a352c5799e917a23e7b76771a8bb97322c1ce7e42934d0066c3/cheroot-9.0.0.tar.gz"
-    sha256 "3d47ad9ee19ecbec144b4758399036692fdbf67a40b96eef1fb1454367b3d338"
+    url "https://files.pythonhosted.org/packages/08/7c/95c154177b16077de0fec1b821b0d8b3df2b59c5c7b3575a9c1bf52a437e/cheroot-10.0.0.tar.gz"
+    sha256 "59c4a1877fef9969b3c3c080caaaf377e2780919437853fc0d32a9df40b311f0"
   end
 
   resource "CherryPy" do
@@ -220,23 +220,18 @@ class Resotoshell < Formula
   end
 
   resource "resotoclient" do
-    url "https://files.pythonhosted.org/packages/23/3e/b6de5fdf32c31286d3b89bf7c8a889ce9acefec418115d8299d8d7c686d4/resotoclient-1.2.1.tar.gz"
-    sha256 "6d733cd1c45b344bd980877bffeb730d6268fc9c1f86d0c8048db20e18558a7f"
+    url "https://files.pythonhosted.org/packages/b4/4e/e8d4af7a83730f17bc7466345c45c45872d131d8c098f4c0b69bd0496d75/resotoclient-1.4.1.tar.gz"
+    sha256 "769d49e9ec432a5bac5b2b7fc377e2671e023e830167a10e89b4a2e31db5f856"
   end
 
   resource "resotolib" do
-    url "https://files.pythonhosted.org/packages/f1/b2/fc61cc381988f70c31ca5bd21560e60d0612a0a9375e9384a46282244953/resotolib-3.3.3.tar.gz"
-    sha256 "3411be5e919d0903dc21e0cff34cffe00f0bdb94496ab1abd4a8ada64423e443"
+    url "https://files.pythonhosted.org/packages/4d/66/252be4662d4067ed573c97b18abd98235e9dbbc094e8d1bdee1b00466fa9/resotolib-3.4.2.tar.gz"
+    sha256 "00e7dfb11e1474e82d55f6b1feea9a783689438bf798e7d6eb1f1dff6e892ff6"
   end
 
   resource "rich" do
     url "https://files.pythonhosted.org/packages/31/3b/2360352760b436f822258396e66ffb6d42585518a9cde2f93f142e64c5eb/rich-13.3.4.tar.gz"
     sha256 "b5d573e13605423ec80bdd0cd5f8541f7844a0e71a13f74cf454ccb2f490708b"
-  end
-
-  resource "six" do
-    url "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz"
-    sha256 "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
   end
 
   resource "tempora" do
@@ -250,8 +245,8 @@ class Resotoshell < Formula
   end
 
   resource "typing-extensions" do
-    url "https://files.pythonhosted.org/packages/d3/20/06270dac7316220643c32ae61694e451c98f8caf4c8eab3aa80a2bedf0df/typing_extensions-4.5.0.tar.gz"
-    sha256 "5cb5f4a79139d699607b3ef622a1dedafa84e115ab0024e0d9c044a9479ca7cb"
+    url "https://files.pythonhosted.org/packages/e4/03/4670b4c206e1dc869f2f0120c3d0a2b17d42526ab2b5a8f66d4cd8642ef3/typing_extensions-4.6.0.tar.gz"
+    sha256 "ff6b238610c747e44c268aa4bb23c8c735d665a63726df3f9431ce707f2aa768"
   end
 
   resource "typish" do
@@ -270,8 +265,8 @@ class Resotoshell < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/21/79/6372d8c0d0641b4072889f3ff84f279b738cd8595b64c8e0496d4e848122/urllib3-1.26.15.tar.gz"
-    sha256 "8a388717b9476f934a21484e8c8e61875ab60644d29b9b39e11e4b9dc1c6b305"
+    url "https://files.pythonhosted.org/packages/e2/7d/539e6f0cf9f0b95b71dd701a56dae89f768cd39fd8ce0096af3546aeb5a3/urllib3-1.26.16.tar.gz"
+    sha256 "8f135f6502756bde6b2a9b28989df5fbe87c9970cecaa69041edcce7f0589b14"
   end
 
   resource "wcwidth" do
@@ -285,8 +280,8 @@ class Resotoshell < Formula
   end
 
   resource "yarl" do
-    url "https://files.pythonhosted.org/packages/ed/02/695dd9ec40214fbad98ffc82e97bbe15d99cb798b837c5af38b5649a20cd/yarl-1.9.1.tar.gz"
-    sha256 "5ce0bcab7ec759062c818d73837644cde567ab8aa1e0d6c45db38dfb7c284441"
+    url "https://files.pythonhosted.org/packages/5f/3f/04b3c5e57844fb9c034b09c5cb6d2b43de5d64a093c30529fd233e16cf09/yarl-1.9.2.tar.gz"
+    sha256 "04ab9d4b9f587c06d801c2abfe9317b77cdf996c65a90d5e84ecc45010823571"
   end
 
   resource "zc.lockfile" do
