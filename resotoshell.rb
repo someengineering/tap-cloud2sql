@@ -79,6 +79,11 @@ class Resotoshell < Formula
     sha256 "d34579085401d3f49762d2f7d6634d6b6c2ae1242202e860f4d26b046e3a1006"
   end
 
+  resource "exceptiongroup" do
+    url "https://files.pythonhosted.org/packages/cc/38/57f14ddc8e8baeddd8993a36fe57ce7b4ba174c35048b9a6d270bb01e833/exceptiongroup-1.1.1.tar.gz"
+    sha256 "d484c3090ba2889ae2928419117447a14daf3c1231d5e30d0aae34f354f01785"
+  end
+
   resource "frozenlist" do
     url "https://files.pythonhosted.org/packages/e9/10/d629476346112b85c912527b9080944fd2c39a816c2225413dbc0bb6fcc0/frozenlist-1.3.3.tar.gz"
     sha256 "58bcc55721e8a90b88332d6cd441261ebb22342e238296bb330968952fbb3a6a"
