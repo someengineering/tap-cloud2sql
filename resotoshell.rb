@@ -79,6 +79,11 @@ class Resotoshell < Formula
     sha256 "d34579085401d3f49762d2f7d6634d6b6c2ae1242202e860f4d26b046e3a1006"
   end
 
+  resource "exceptiongroup" do
+    url "https://files.pythonhosted.org/packages/cc/38/57f14ddc8e8baeddd8993a36fe57ce7b4ba174c35048b9a6d270bb01e833/exceptiongroup-1.1.1.tar.gz"
+    sha256 "d484c3090ba2889ae2928419117447a14daf3c1231d5e30d0aae34f354f01785"
+  end
+
   resource "frozenlist" do
     url "https://files.pythonhosted.org/packages/e9/10/d629476346112b85c912527b9080944fd2c39a816c2225413dbc0bb6fcc0/frozenlist-1.3.3.tar.gz"
     sha256 "58bcc55721e8a90b88332d6cd441261ebb22342e238296bb330968952fbb3a6a"
@@ -280,8 +285,8 @@ class Resotoshell < Formula
   end
 
   resource "websocket-client" do
-    url "https://files.pythonhosted.org/packages/98/be/1aa255e5b937e62ca81b6d990e372bc013e355bd8048b8579eefe24ad57d/websocket-client-1.5.3.tar.gz"
-    sha256 "b96f3bce3e54e3486ebe6504bc22bd4c140392bd2eb71764db29be8f2639aa65"
+    url "https://files.pythonhosted.org/packages/31/4e/aa6ab8f8812b5766350ed2beb5bc6f3a007c448dd9c178ef5db2d163dac3/websocket-client-1.6.0.tar.gz"
+    sha256 "e84c7eafc66aade6d1967a51dfd219aabdf81d15b9705196e11fd81f48666b78"
   end
 
   resource "yarl" do
