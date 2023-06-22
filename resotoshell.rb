@@ -3,8 +3,8 @@ class Resotoshell < Formula
 
   desc "Resoto command line shell"
   homepage ""
-  url "https://files.pythonhosted.org/packages/d1/86/a24589c8c54ea3d638161d6cab622019936cdf55c8e21379391109be3485/resotoshell-3.5.2.tar.gz"
-  sha256 "fb96a069931c6458add987db4db2ea80fbf19a94a1f52cb0f3b27a729e07304e"
+  url "https://files.pythonhosted.org/packages/8c/a3/61b3a9445b6fc4bc1badc571237203b65302574b92e5d7be2b0ad079db52/resotoshell-3.5.3.tar.gz"
+  sha256 "1f41e5271b1d0a58c9069613fe58d9aec02a541f2ac59b041ed75d2d1413b127"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -120,8 +120,8 @@ class Resotoshell < Formula
   end
 
   resource "markdown-it-py" do
-    url "https://files.pythonhosted.org/packages/38/71/3b932df36c1a044d397a1f92d1cf91ee0a503d91e470cbd670aa66b07ed0/markdown-it-py-3.0.0.tar.gz"
-    sha256 "e3f60a94fa066dc52ec76661e37c851cb232d92f9886b15cb560aaada2df8feb"
+    url "https://files.pythonhosted.org/packages/e4/c0/59bd6d0571986f72899288a95d9d6178d0eebd70b6650f1bb3f0da90f8f7/markdown-it-py-2.2.0.tar.gz"
+    sha256 "7c9a5e412688bc771c67432cbfebcdd686c93ce6484913dccf06cb5a0bea35a1"
   end
 
   resource "mdurl" do
@@ -225,13 +225,13 @@ class Resotoshell < Formula
   end
 
   resource "resotolib" do
-    url "https://files.pythonhosted.org/packages/33/0b/522fc1733d0009019010b0e472d22d97e27809d2abda05d6a8182a912da8/resotolib-3.5.2.tar.gz"
-    sha256 "dc56c2519e6cf10e927522ba710d6506142b3dd7eea5067c8a1643c5c589b015"
+    url "https://files.pythonhosted.org/packages/1d/6b/40a7aea0313a9457b49acbcd167a232735cb72ea0e1403ceaba21a3ee8be/resotolib-3.5.3.tar.gz"
+    sha256 "256d205877d5dfce0263e90fe77b378367cc8ba81f13038b8fd1ac922f75672d"
   end
 
   resource "rich" do
-    url "https://files.pythonhosted.org/packages/e3/12/67d0098eb77005f5e068de639e6f4cfb8f24e6fcb0fd2037df0e1d538fee/rich-13.4.2.tar.gz"
-    sha256 "d653d6bccede5844304c605d5aac802c7cf9621efd700b46c7ec2b51ea914898"
+    url "https://files.pythonhosted.org/packages/02/97/0046b5e3c6a5057b5817e5e6c51a776d410b953e6a9c67ae249dafdd2999/rich-13.4.1.tar.gz"
+    sha256 "76f6b65ea7e5c5d924ba80e322231d7cb5b5981aa60bfc1e694f1bc097fe6fe1"
   end
 
   resource "six" do
@@ -240,8 +240,8 @@ class Resotoshell < Formula
   end
 
   resource "tempora" do
-    url "https://files.pythonhosted.org/packages/24/9e/fe5328123e2d416b39c5e790165074123c54e34e82aecca33473711dd439/tempora-5.3.0.tar.gz"
-    sha256 "61c3c418428d60e37b7ddbaec2064b2e7d1dbdfbde6fa1f770ac153ec64cfe1f"
+    url "https://files.pythonhosted.org/packages/1c/32/963e37d9ad64582b822b8bf3288ac135ede936e5c8fe1c71da74164f0974/tempora-5.2.2.tar.gz"
+    sha256 "98ee27bc528c91a236f9a5d612ede4ef391b01f7862bf11b483ce549053651c1"
   end
 
   resource "typeguard" do
@@ -270,8 +270,8 @@ class Resotoshell < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/d6/af/3b4cfedd46b3addab52e84a71ab26518272c23c77116de3c61ead54af903/urllib3-2.0.3.tar.gz"
-    sha256 "bee28b5e56addb8226c96f7f13ac28cb4c301dd5ea8a6ca179c0b9835e032825"
+    url "https://files.pythonhosted.org/packages/e2/7d/539e6f0cf9f0b95b71dd701a56dae89f768cd39fd8ce0096af3546aeb5a3/urllib3-1.26.16.tar.gz"
+    sha256 "8f135f6502756bde6b2a9b28989df5fbe87c9970cecaa69041edcce7f0589b14"
   end
 
   resource "wcwidth" do
@@ -280,8 +280,8 @@ class Resotoshell < Formula
   end
 
   resource "websocket-client" do
-    url "https://files.pythonhosted.org/packages/98/be/1aa255e5b937e62ca81b6d990e372bc013e355bd8048b8579eefe24ad57d/websocket-client-1.5.3.tar.gz"
-    sha256 "b96f3bce3e54e3486ebe6504bc22bd4c140392bd2eb71764db29be8f2639aa65"
+    url "https://files.pythonhosted.org/packages/3f/f2/2624e12ef854ee667d92ac5dc7815932095e0852e5ff2b2bf57feda8a11b/websocket-client-1.5.2.tar.gz"
+    sha256 "c7d67c13b928645f259d9b847ab5b57fd2d127213ca41ebd880de1f553b7c23b"
   end
 
   resource "yarl" do
