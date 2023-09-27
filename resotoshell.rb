@@ -3,8 +3,8 @@ class Resotoshell < Formula
 
   desc "Resoto command line shell"
   homepage ""
-  url "https://files.pythonhosted.org/packages/8c/a3/61b3a9445b6fc4bc1badc571237203b65302574b92e5d7be2b0ad079db52/resotoshell-3.5.3.tar.gz"
-  sha256 "1f41e5271b1d0a58c9069613fe58d9aec02a541f2ac59b041ed75d2d1413b127"
+  url "https://files.pythonhosted.org/packages/cb/04/0110887d8e9702a88542e59f611f03d19b0ccef65b17df96045375257a16/resotoshell-3.7.0.tar.gz"
+  sha256 "df789058316046b08bef8280d8683d22a2599772f4d010ab65be7d47d2d0e8b1"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -15,8 +15,8 @@ class Resotoshell < Formula
   end
 
   resource "aiohttp" do
-    url "https://files.pythonhosted.org/packages/c2/fd/1ff4da09ca29d8933fda3f3514980357e25419ce5e0f689041edb8f17dab/aiohttp-3.8.4.tar.gz"
-    sha256 "bf2e1a9162c1e441bf805a1fd166e249d574ca04e03b34f97e2928769e91ab5c"
+    url "https://files.pythonhosted.org/packages/d6/12/6fc7c7dcc84e263940e87cbafca17c1ef28f39dae6c0b10f51e4ccc764ee/aiohttp-3.8.5.tar.gz"
+    sha256 "b9552ec52cc147dbf1944ac7ac98af7602e51ea2dcd076ed194ca3c0d1c7d0bc"
   end
 
   resource "aiosignal" do
@@ -24,9 +24,14 @@ class Resotoshell < Formula
     sha256 "54cd96e15e1649b75d6c87526a6ff0b6c1b0dd3459f43d9ca11d48c339b68cfc"
   end
 
+  resource "annotated-types" do
+    url "https://files.pythonhosted.org/packages/42/97/41ccb6acac36fdd13592a686a21b311418f786f519e5794b957afbcea938/annotated_types-0.5.0.tar.gz"
+    sha256 "47cdc3490d9ac1506ce92c7aaa76c579dc3509ff11e098fc867e5130ab7be802"
+  end
+
   resource "async-timeout" do
-    url "https://files.pythonhosted.org/packages/54/6e/9678f7b2993537452710ffb1750c62d2c26df438aa621ad5fa9d1507a43a/async-timeout-4.0.2.tar.gz"
-    sha256 "2163e1640ddb52b7a8c80d0a67a08587e5d245cc9c553a74a847056bc2976b15"
+    url "https://files.pythonhosted.org/packages/87/d6/21b30a550dafea84b1b8eee21b5e23fa16d010ae006011221f33dcd8d7f8/async-timeout-4.0.3.tar.gz"
+    sha256 "4640d96be84d82d02ed59ea2b7105a0f7b33abe8703703cd0ab0bf87c427522f"
   end
 
   resource "attrs" do
@@ -40,8 +45,8 @@ class Resotoshell < Formula
   end
 
   resource "Brotli" do
-    url "https://files.pythonhosted.org/packages/2a/18/70c32fe9357f3eea18598b23aa9ed29b1711c3001835f7cf99a9818985d0/Brotli-1.0.9.zip"
-    sha256 "4d1b810aa0ed773f81dceda2cc7b403d01057458730e309856356d4ef4188438"
+    url "https://files.pythonhosted.org/packages/2f/c2/f9e977608bdf958650638c3f1e28f85a1b075f075ebbe77db8555463787b/Brotli-1.1.0.tar.gz"
+    sha256 "81de08ac11bcb85841e440c13611c00b67d3bf82698314928d0b676362546724"
   end
 
   resource "cattrs" do
@@ -50,8 +55,8 @@ class Resotoshell < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/93/71/752f7a4dd4c20d6b12341ed1732368546bc0ca9866139fe812f6009d9ac7/certifi-2023.5.7.tar.gz"
-    sha256 "0f0d56dc5a6ad56fd4ba36484d6cc34451e1c6548c61daad8c320169f91eddc7"
+    url "https://files.pythonhosted.org/packages/98/98/c2ff18671db109c9f10ed27f5ef610ae05b73bd876664139cf95bd1429aa/certifi-2023.7.22.tar.gz"
+    sha256 "539cc1d13202e33ca466e88b2807e29f4c13049d6d87031a3c110744495cb082"
   end
 
   resource "cffi" do
@@ -60,8 +65,8 @@ class Resotoshell < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/ff/d7/8d757f8bd45be079d76309248845a04f09619a7b17d6dfc8c9ff6433cac2/charset-normalizer-3.1.0.tar.gz"
-    sha256 "34e0a2f9c370eb95597aae63bf85eb5e96826d81e3dcf88b8886012906f509b5"
+    url "https://files.pythonhosted.org/packages/2a/53/cf0a48de1bdcf6ff6e1c9a023f5f523dfe303e4024f216feac64b6eb7f67/charset-normalizer-3.2.0.tar.gz"
+    sha256 "3bb3d25a8e6c0aedd251753a79ae98a093c7e7b471faa3aa9a93a81431987ace"
   end
 
   resource "cheroot" do
@@ -75,13 +80,18 @@ class Resotoshell < Formula
   end
 
   resource "cryptography" do
-    url "https://files.pythonhosted.org/packages/19/8c/47f061de65d1571210dc46436c14a0a4c260fd0f3eaf61ce9b9d445ce12f/cryptography-41.0.1.tar.gz"
-    sha256 "d34579085401d3f49762d2f7d6634d6b6c2ae1242202e860f4d26b046e3a1006"
+    url "https://files.pythonhosted.org/packages/f7/80/04cc7637238b78f8e7354900817135c5a23cf66dfb3f3a216c6d630d6833/cryptography-40.0.2.tar.gz"
+    sha256 "c33c0d32b8594fa647d2e01dbccc303478e16fdd7cf98652d5b3ed11aa5e5c99"
+  end
+
+  resource "frozendict" do
+    url "https://files.pythonhosted.org/packages/09/73/e3a2f0181a25b189429796f1d33d35658b68c22ec4792fa22d3caebcfc45/frozendict-2.3.8.tar.gz"
+    sha256 "5526559eca8f1780a4ee5146896f59afc31435313560208dd394a3a5e537d3ff"
   end
 
   resource "frozenlist" do
-    url "https://files.pythonhosted.org/packages/e9/10/d629476346112b85c912527b9080944fd2c39a816c2225413dbc0bb6fcc0/frozenlist-1.3.3.tar.gz"
-    sha256 "58bcc55721e8a90b88332d6cd441261ebb22342e238296bb330968952fbb3a6a"
+    url "https://files.pythonhosted.org/packages/8c/1f/49c96ccc87127682ba900b092863ef7c20302a2144b3185412a08480ca22/frozenlist-1.4.0.tar.gz"
+    sha256 "09163bdf0b2907454042edb19f887c6d33806adc71fbd54afc14908bfdc22251"
   end
 
   resource "idna" do
@@ -90,13 +100,13 @@ class Resotoshell < Formula
   end
 
   resource "inflect" do
-    url "https://files.pythonhosted.org/packages/3b/9b/6e44523788cadec2a2bef2632c21264a74ab172cf9a13fab5c94b10db7f2/inflect-6.0.4.tar.gz"
-    sha256 "1842649a17b6cad66812a5c9bdfacb6310e1e7b6dd8a31f026766df1b62612eb"
+    url "https://files.pythonhosted.org/packages/9f/90/1d0a889847fdce963ebe9684de24a749e4fad627bf595e9f0d32730f85a8/inflect-7.0.0.tar.gz"
+    sha256 "63da9325ad29da81ec23e055b41225795ab793b4ecb483be5dc1fa363fd4717e"
   end
 
   resource "jaraco.collections" do
-    url "https://files.pythonhosted.org/packages/95/60/2cf3c42c0dc26342885390a61a71cb5cb7b49f9bf181bb3e56573ae28a0e/jaraco.collections-4.2.0.tar.gz"
-    sha256 "d91461bbfa4e1257e1d94cc2d0a4bd1e261229dda371f7bfa3683c64d32cd31e"
+    url "https://files.pythonhosted.org/packages/de/b5/8ea883dc5161d844c97f6472ed66cd8f7644ef70659977819f76425106f4/jaraco.collections-4.3.0.tar.gz"
+    sha256 "74ffc23fccfee4de0a2ebf556a33675b6a3c003d6335947d3122a0bc8822c8e4"
   end
 
   resource "jaraco.context" do
@@ -105,8 +115,8 @@ class Resotoshell < Formula
   end
 
   resource "jaraco.functools" do
-    url "https://files.pythonhosted.org/packages/a9/9b/5da438f6734ad7bc13ae1ab5d14329526f2c93b122d89482cb24bad97714/jaraco.functools-3.7.0.tar.gz"
-    sha256 "685dc06075696697edc9c4ef89af33f0fd2570a6ff57767332dbf4165e5ffbb3"
+    url "https://files.pythonhosted.org/packages/e6/f7/97322b08780ac7f783893991a1ed2a0a8b9c729d06350e2a1c6e7f8687cb/jaraco.functools-3.9.0.tar.gz"
+    sha256 "8b137b0feacc17fef4bacee04c011c9e86f2341099c870a1d12d3be37b32a638"
   end
 
   resource "jaraco.text" do
@@ -120,8 +130,8 @@ class Resotoshell < Formula
   end
 
   resource "markdown-it-py" do
-    url "https://files.pythonhosted.org/packages/e4/c0/59bd6d0571986f72899288a95d9d6178d0eebd70b6650f1bb3f0da90f8f7/markdown-it-py-2.2.0.tar.gz"
-    sha256 "7c9a5e412688bc771c67432cbfebcdd686c93ce6484913dccf06cb5a0bea35a1"
+    url "https://files.pythonhosted.org/packages/38/71/3b932df36c1a044d397a1f92d1cf91ee0a503d91e470cbd670aa66b07ed0/markdown-it-py-3.0.0.tar.gz"
+    sha256 "e3f60a94fa066dc52ec76661e37c851cb232d92f9886b15cb560aaada2df8feb"
   end
 
   resource "mdurl" do
@@ -130,8 +140,8 @@ class Resotoshell < Formula
   end
 
   resource "more-itertools" do
-    url "https://files.pythonhosted.org/packages/2e/d0/bea165535891bd1dcb5152263603e902c0ec1f4c9a2e152cc4adff6b3a38/more-itertools-9.1.0.tar.gz"
-    sha256 "cabaa341ad0389ea83c17a94566a53ae4c9d07349861ecb14dc6d0345cf9ac5d"
+    url "https://files.pythonhosted.org/packages/2d/73/3557e45746fcaded71125c0a1c0f87616e8258c78391f0c365bf97bbfc99/more-itertools-10.1.0.tar.gz"
+    sha256 "626c369fa0eb37bac0291bce8259b332fd59ac792fa5497b59837309cd5b114a"
   end
 
   resource "multidict" do
@@ -155,18 +165,18 @@ class Resotoshell < Formula
   end
 
   resource "portend" do
-    url "https://files.pythonhosted.org/packages/6e/0a/42bcc9c97744958ce72d33f526e972379b9e90adede8a151f338818c41d4/portend-3.1.0.tar.gz"
-    sha256 "239e3116045ea823f6df87d6168107ad75ccc0590e37242af0cc1e98c5d224e4"
+    url "https://files.pythonhosted.org/packages/8f/fc/bcfc768996b438d6e4bde7a6c8cfd62089847b0f5381a0e0ec2d8ee6b202/portend-3.2.0.tar.gz"
+    sha256 "5250a352c19c959d767cac878b829d93e5dc7625a5143399a2a00dc6628ffb72"
   end
 
   resource "prometheus-client" do
-    url "https://files.pythonhosted.org/packages/0e/01/bda72c3b5d4a0df411bceb88c4993d413dd9b7d3b3b68ab19171a09e7db1/prometheus_client-0.17.0.tar.gz"
-    sha256 "9c3b26f1535945e85b8934fb374678d263137b78ef85f305b1156c7c881cd11b"
+    url "https://files.pythonhosted.org/packages/f5/05/aee33352594522c56eb4a4382b5acd9a706a030db9ba2fc3dc38a283e75c/prometheus_client-0.17.1.tar.gz"
+    sha256 "21e674f39831ae3f8acde238afd9a27a37d0d2fb5a28ea094f0ce25d2cbf2091"
   end
 
   resource "prompt-toolkit" do
-    url "https://files.pythonhosted.org/packages/4b/bb/75cdcd356f57d17b295aba121494c2333d26bfff1a837e6199b8b83c415a/prompt_toolkit-3.0.38.tar.gz"
-    sha256 "23ac5d50538a9a38c8bde05fecb47d0b403ecd0662857a86f886f798563d5b9b"
+    url "https://files.pythonhosted.org/packages/9a/02/76cadde6135986dc1e82e2928f35ebeb5a1af805e2527fe466285593a2ba/prompt_toolkit-3.0.39.tar.gz"
+    sha256 "04505ade687dc26dc4284b1ad19a83be2f2afe83e7a828ace0c72f3a1df72aac"
   end
 
   resource "psutil" do
@@ -185,18 +195,23 @@ class Resotoshell < Formula
   end
 
   resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/ec/0a/cf955f8bb3b9498d554522cfe7cb9b019ba9f8b86e2879009f604207b72c/pydantic-1.10.9.tar.gz"
-    sha256 "95c70da2cd3b6ddf3b9645ecaa8d98f3d80c606624b6d245558d202cd23ea3be"
+    url "https://files.pythonhosted.org/packages/fd/fe/8f08bf18b2c53afb4b358fae6e9b3501e169a2c1c9c0cd96f21a40bb7abd/pydantic-2.3.0.tar.gz"
+    sha256 "1607cc106602284cd4a00882986570472f193fde9cb1259bceeaedb26aa79a6d"
+  end
+
+  resource "pydantic-core" do
+    url "https://files.pythonhosted.org/packages/cb/fe/8c9363389f8f303fb151895af83ac30e06c0406779fe188b4281a64e4c50/pydantic_core-2.6.3.tar.gz"
+    sha256 "1508f37ba9e3ddc0189e6ff4e2228bd2d3c3a4641cbe8c07177162f76ed696c7"
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/89/6b/2114e54b290824197006e41be3f9bbe1a26e9c39d1f5fa20a6d62945a0b3/Pygments-2.15.1.tar.gz"
-    sha256 "8ace4d3c1dd481894b2005f560ead0f9f19ee64fe983366be1a21e171d12775c"
+    url "https://files.pythonhosted.org/packages/d6/f7/4d461ddf9c2bcd6a4d7b2b139267ca32a69439387cc1f02a924ff8883825/Pygments-2.16.1.tar.gz"
+    sha256 "1daff0494820c69bc8941e407aa20f577374ee88364ee10a98fdbe0aece96e29"
   end
 
   resource "PyJWT" do
-    url "https://files.pythonhosted.org/packages/e0/f0/9804c72e9a314360c135f42c434eb42eaabb5e7ebad760cbd8fc7023be38/PyJWT-2.7.0.tar.gz"
-    sha256 "bd6ca4a3c4285c1a2d4349e5a035fdf8fb94e04ccd0fcbe6ba289dae9cc3e074"
+    url "https://files.pythonhosted.org/packages/30/72/8259b2bccfe4673330cea843ab23f86858a419d8f1493f66d413a76c7e3b/PyJWT-2.8.0.tar.gz"
+    sha256 "57e28d156e3d5c10088e0c68abb90bfac3df82b40a71bd0daa20c65ccd5c23de"
   end
 
   resource "python-dateutil" do
@@ -205,13 +220,13 @@ class Resotoshell < Formula
   end
 
   resource "pytz" do
-    url "https://files.pythonhosted.org/packages/5e/32/12032aa8c673ee16707a9b6cdda2b09c0089131f35af55d443b6a9c69c1d/pytz-2023.3.tar.gz"
-    sha256 "1d8ce29db189191fb55338ee6d0387d82ab59f3d00eac103412d64e0ebd0c588"
+    url "https://files.pythonhosted.org/packages/69/4f/7bf883f12ad496ecc9514cd9e267b29a68b3e9629661a2bbc24f80eff168/pytz-2023.3.post1.tar.gz"
+    sha256 "7b4fddbeb94a1eba4b557da24f19fdf9db575192544270a9101d8509f9f43d7b"
   end
 
   resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz"
-    sha256 "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
+    url "https://files.pythonhosted.org/packages/cd/e5/af35f7ea75cf72f2cd079c95ee16797de7cd71f29ea7c68ae5ce7be1eda0/PyYAML-6.0.1.tar.gz"
+    sha256 "bfdf460b1736c775f2ba9f6a92bca30bc2095067b8a9d77876d1fad6cc3b4a43"
   end
 
   resource "requests" do
@@ -220,18 +235,18 @@ class Resotoshell < Formula
   end
 
   resource "resotoclient" do
-    url "https://files.pythonhosted.org/packages/b4/4e/e8d4af7a83730f17bc7466345c45c45872d131d8c098f4c0b69bd0496d75/resotoclient-1.4.1.tar.gz"
-    sha256 "769d49e9ec432a5bac5b2b7fc377e2671e023e830167a10e89b4a2e31db5f856"
+    url "https://files.pythonhosted.org/packages/5c/88/4886a8ccd17c0752522aaec8520b1e8cea08bfe8db3ac4d36e5333180e58/resotoclient-1.5.0.tar.gz"
+    sha256 "4adf2a534e79522349295a5407e8c3bd0b97d2dc8ffb50439710624a37d1d719"
   end
 
   resource "resotolib" do
-    url "https://files.pythonhosted.org/packages/1d/6b/40a7aea0313a9457b49acbcd167a232735cb72ea0e1403ceaba21a3ee8be/resotolib-3.5.3.tar.gz"
-    sha256 "256d205877d5dfce0263e90fe77b378367cc8ba81f13038b8fd1ac922f75672d"
+    url "https://files.pythonhosted.org/packages/31/82/4edf3f9bf03a324bb4554b61768142c68a0115f6bc6f8bb999b6c665a043/resotolib-3.7.0.tar.gz"
+    sha256 "95cae64f8342cf7da44ba93f77b3e971b1cc1a093498c8edc498dbd34efd726c"
   end
 
   resource "rich" do
-    url "https://files.pythonhosted.org/packages/02/97/0046b5e3c6a5057b5817e5e6c51a776d410b953e6a9c67ae249dafdd2999/rich-13.4.1.tar.gz"
-    sha256 "76f6b65ea7e5c5d924ba80e322231d7cb5b5981aa60bfc1e694f1bc097fe6fe1"
+    url "https://files.pythonhosted.org/packages/1d/d6/9773d48804d085962c4f522db96f6a9ea9bd2e0480b3959a929176d92f01/rich-13.5.3.tar.gz"
+    sha256 "87b43e0543149efa1253f485cd845bb7ee54df16c9617b8a893650ab84b4acb6"
   end
 
   resource "six" do
@@ -240,18 +255,18 @@ class Resotoshell < Formula
   end
 
   resource "tempora" do
-    url "https://files.pythonhosted.org/packages/1c/32/963e37d9ad64582b822b8bf3288ac135ede936e5c8fe1c71da74164f0974/tempora-5.2.2.tar.gz"
-    sha256 "98ee27bc528c91a236f9a5d612ede4ef391b01f7862bf11b483ce549053651c1"
+    url "https://files.pythonhosted.org/packages/c9/dc/97d90b9f64dbe4f599023e19602b33a2cced68462db67a3d4805a77cf784/tempora-5.5.0.tar.gz"
+    sha256 "13e4fcc997d0509c3306d6841f03e9381b7e5e46b2bebfae9151af90085f0c26"
   end
 
   resource "typeguard" do
-    url "https://files.pythonhosted.org/packages/81/1f/38b3c89109c3efefd5d02073aa75e765ed5392288a1181cb6e82ee775c06/typeguard-4.0.0.tar.gz"
-    sha256 "194fb3dbcb06ea9caf7088f3befee014de57961689f9c859ac5239b1ef61d987"
+    url "https://files.pythonhosted.org/packages/90/fb/e5d68ef7b0bca67d06bb4a15f9317decbd1a3f323c3d89221d2ca4c11512/typeguard-4.1.5.tar.gz"
+    sha256 "ea0a113bbc111bcffc90789ebb215625c963411f7096a7e9062d4e4630c155fd"
   end
 
   resource "typing-extensions" do
-    url "https://files.pythonhosted.org/packages/42/56/cfaa7a5281734dadc842f3a22e50447c675a1c5a5b9f6ad8a07b467bffe7/typing_extensions-4.6.3.tar.gz"
-    sha256 "d91d5919357fe7f681a9f2b5b4cb2a5f1ef0a1e9f59c4d8ff0d3491e05c0ffd5"
+    url "https://files.pythonhosted.org/packages/1f/7a/8b94bb016069caa12fc9f587b28080ac33b4fbb8ca369b98bc0a4828543e/typing_extensions-4.8.0.tar.gz"
+    sha256 "df8e4339e9cb77357558cbdbceca33c303714cf861d1eef15e1070055ae8b7ef"
   end
 
   resource "typish" do
@@ -280,8 +295,8 @@ class Resotoshell < Formula
   end
 
   resource "websocket-client" do
-    url "https://files.pythonhosted.org/packages/3f/f2/2624e12ef854ee667d92ac5dc7815932095e0852e5ff2b2bf57feda8a11b/websocket-client-1.5.2.tar.gz"
-    sha256 "c7d67c13b928645f259d9b847ab5b57fd2d127213ca41ebd880de1f553b7c23b"
+    url "https://files.pythonhosted.org/packages/44/34/551f30cbdc0515c39c2e78ef5919615785cd370844e40ada82367c1fab3f/websocket-client-1.6.3.tar.gz"
+    sha256 "3aad25d31284266bcfcfd1fd8a743f63282305a364b8d0948a43bd606acc652f"
   end
 
   resource "yarl" do
