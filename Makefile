@@ -1,20 +1,20 @@
 .DEFAULT_GOAL := all
-.SILENT: cloud2sql, resotoshell
-.PHONY: cloud2sql, resotoshell
+.SILENT: cloud2sql, fixshell
+.PHONY: cloud2sql, fixshell
 
-all: cloud2sql resotoshell
+all: cloud2sql fixshell
 
 cloud2sql:
 	# create a separate venv for homebrew
 	rm -fr .homebrew
 	python3 -m venv .homebrew --prompt "homebrew poet"
 	. ./.homebrew/bin/activate && python3 -m pip install --upgrade pip
-ifeq (,$(wildcard requirements-resoto.txt))
-	echo "No requirements-resoto.txt found\n\n"
+ifeq (,$(wildcard requirements-fixinventory.txt))
+	echo "No requirements-fixinventory.txt found\n\n"
 	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet "cloud2sql[all]"
 else
-	echo "Use requirements-resoto.txt!\n\n"
-	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet "cloud2sql[all]" -r requirements-resoto.txt
+	echo "Use requirements-fixinventory.txt!\n\n"
+	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet "cloud2sql[all]" -r requirements-fixinventory.txt
 endif
 	. ./.homebrew/bin/activate && poet -f cloud2sql > cloud2sql.rb
 	# typish does not have a source formula
@@ -31,27 +31,27 @@ endif
 	rm -fr .homebrew
 
 
-resotoshell:
+fixshell:
 	# create a separate venv for homebrew
 	rm -fr .homebrew
 	python3 -m venv .homebrew --prompt "homebrew poet"
 	. ./.homebrew/bin/activate && python3 -m pip install --upgrade pip
-ifeq (,$(wildcard requirements-resoto.txt))
-	echo "No requirements-resoto.txt found\n\n"
-	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet resotoshell
+ifeq (,$(wildcard requirements-fixinventory.txt))
+	echo "No requirements-fixinventory.txt found\n\n"
+	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet fixinventoryshell
 else
-	echo "Use requirements-resoto.txt!\n\n"
-	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet resotoshell -r requirements-resoto.txt
+	echo "Use requirements-fixinventory.txt!\n\n"
+	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet fixinventoryshell -r requirements-fixinventory.txt
 endif
-	. ./.homebrew/bin/activate && poet -f resotoshell > resotoshell.rb
+	. ./.homebrew/bin/activate && poet -f fixinventoryshell > fixshell.rb
 	# typish does not have a source formula
-	sed -i.bck '/resource "typish"/{N;N;N;N;s#url ""#url "https://cdn.some.engineering/pypi/typish-1.9.3.tar.gz"#;s#sha256 ""#sha256 "fec4dc0b832a4565becfc18b40e15e397f66cbc6f8f5c2fe8e096188b0530656"#;}' resotoshell.rb
+	sed -i.bck '/resource "typish"/{N;N;N;N;s#url ""#url "https://cdn.some.engineering/pypi/typish-1.9.3.tar.gz"#;s#sha256 ""#sha256 "fec4dc0b832a4565becfc18b40e15e397f66cbc6f8f5c2fe8e096188b0530656"#;}' fixshell.rb
 	# remove the test section
-	sed -i.bck "/test do/{N;N;d;}" resotoshell.rb
+	sed -i.bck "/test do/{N;N;d;}" fixshell.rb
 	# replace the default description
-	sed -i.bck "s/Shiny new formula/Resoto command line shell/" resotoshell.rb
+	sed -i.bck "s/Shiny new formula/Fix Inventory Shell/" fixshell.rb
 	# remove the venv
-	sed -i.bck 's/depends_on "python3"/depends_on "python@3.10"\n  depends_on "rust" => :build/' resotoshell.rb
+	sed -i.bck 's/depends_on "python3"/depends_on "python@3.10"\n  depends_on "rust" => :build/' fixshell.rb
 	# remove the backup files
 	rm *.bck
 	# remove the venv
