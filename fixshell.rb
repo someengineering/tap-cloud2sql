@@ -1,7 +1,7 @@
 class Fixinventoryshell < Formula
   include Language::Python::Virtualenv
 
-  desc "Resoto command line shell"
+  desc "Fix Inventory Shell"
   homepage ""
   url "https://files.pythonhosted.org/packages/e5/d6/1b749a7d929dc1742020a6d73eb52ba9f4a5ac29ff7e14380bc17bae6675/fixinventoryshell-4.0.0.tar.gz"
   sha256 "53a483cdcb4abdcbfc861d0d25e4b552bfe97e6a934176f0c7f136233c1af27a"
