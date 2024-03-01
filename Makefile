@@ -9,12 +9,12 @@ cloud2sql:
 	rm -fr .homebrew
 	python3 -m venv .homebrew --prompt "homebrew poet"
 	. ./.homebrew/bin/activate && python3 -m pip install --upgrade pip
-ifeq (,$(wildcard requirements-fixinventory.txt))
-	echo "No requirements-fixinventory.txt found\n\n"
+ifeq (,$(wildcard requirements-fix.txt))
+	echo "No requirements-fix.txt found\n\n"
 	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet "cloud2sql[all]"
 else
-	echo "Use requirements-fixinventory.txt!\n\n"
-	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet "cloud2sql[all]" -r requirements-fixinventory.txt
+	echo "Use requirements-fix.txt!\n\n"
+	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet "cloud2sql[all]" -r requirements-fix.txt
 endif
 	. ./.homebrew/bin/activate && poet -f cloud2sql > cloud2sql.rb
 	# typish does not have a source formula
@@ -36,12 +36,12 @@ fixshell:
 	rm -fr .homebrew
 	python3 -m venv .homebrew --prompt "homebrew poet"
 	. ./.homebrew/bin/activate && python3 -m pip install --upgrade pip
-ifeq (,$(wildcard requirements-fixinventory.txt))
-	echo "No requirements-fixinventory.txt found\n\n"
+ifeq (,$(wildcard requirements-fix.txt))
+	echo "No requirements-fix.txt found\n\n"
 	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet fixinventoryshell
 else
-	echo "Use requirements-fixinventory.txt!\n\n"
-	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet fixinventoryshell -r requirements-fixinventory.txt
+	echo "Use requirements-fix.txt!\n\n"
+	. ./.homebrew/bin/activate && pip install homebrew-pypi-poet fixinventoryshell -r requirements-fix.txt
 endif
 	. ./.homebrew/bin/activate && poet -f fixinventoryshell > fixshell.rb
 	# typish does not have a source formula
