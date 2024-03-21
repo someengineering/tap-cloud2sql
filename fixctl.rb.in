@@ -1,0 +1,25 @@
+class Fixctl < Formula
+    desc "fixctl is a command line tool for searching the Fix Security graph."
+    homepage "https://fix.security/"
+    version "@FIXCTL_VERSION@"
+    license "AGPL-3.0"
+  
+    if OS.mac?
+        url "@FIXCTL_MACOS_UNIVERSAL_BINARY_URL@"
+        sha256 "@FIXCTL_MACOS_UNIVERSAL_BINARY_SHA256@"
+    elsif OS.linux? && Hardware::CPU.intel?
+        url "@FIXCTL_LINUX_AMD64_BINARY_URL@"
+        sha256 "@FIXCTL_LINUX_AMD64_BINARY_SHA256@"
+    elsif OS.linux? && Hardware::CPU.arm?
+        url "@FIXCTL_LINUX_ARM64_BINARY_URL@"
+        sha256 "@FIXCTL_LINUX_ARM64_BINARY_SHA256@"
+    end
+  
+    def install
+        bin.install "fixctl"
+    end
+  
+    test do
+        system "#{bin}/fixctl", "--help"
+    end
+end
