@@ -6,13 +6,13 @@ class Fixctl < Formula
   
     if OS.mac?
         url "https://github.com/someengineering/fixctl/releases/download/0.0.3/fixctl-macos-universal-0.0.3"
-        sha256 "a6d17cdac681773a41cedb874614d97a1a8d792ee972cd8dfbd3b652d9762f54"
+        sha256 "6b1547a04dd32d131d695ea6ac4dd1dd2e812c8f6f353139e835adaa392bc856"
     elsif OS.linux? && Hardware::CPU.intel?
         url "https://github.com/someengineering/fixctl/releases/download/0.0.3/fixctl-linux-amd64-0.0.3"
-        sha256 "e08d46363e62f9e053a7c575b1114d7693305d38fe07f53ce072b8aeb9205f6c"
+        sha256 "d1b2b7ce2b103e759d458bb2b5777759d32e68defc36389575e5d2d8aaf0b3a6"
     elsif OS.linux? && Hardware::CPU.arm?
         url "https://github.com/someengineering/fixctl/releases/download/0.0.3/fixctl-linux-arm64-0.0.3"
-        sha256 "4bdccbb007e9dd53771035a1c465b2bdeb4eaf27d89f35059991229eb90ba016"
+        sha256 "92175b46818a2f77d3c53124d24abf51e091d43a001b73ba5c727e8662772f09"
     end
   
     def install
