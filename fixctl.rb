@@ -16,7 +16,9 @@ class Fixctl < Formula
     end
   
     def install
-        bin.install "fixctl"
+        bin.install "fixctl-macos-universal-#{version}" => "fixctl" if OS.mac?
+        bin.install "fixctl-linux-amd64-#{version}" => "fixctl" if OS.linux? && Hardware::CPU.intel?
+        bin.install "fixctl-linux-arm64-#{version}" => "fixctl" if OS.linux? && Hardware::CPU.arm?
     end
   
     test do
