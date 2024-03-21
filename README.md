@@ -1,7 +1,7 @@
 # tap
 homebrew tap for all someengineering packages.
 
-## Fix Inventory Shell
+## Fix `fixctl`
 
 [fixctl](https://github.com/someengineering/fixctl) CLI tool to interact with [Fix](https://fix.security).
 
