@@ -6,7 +6,7 @@ homebrew tap for all someengineering packages.
 [fixctl](https://github.com/someengineering/fixctl) CLI tool to interact with [Fix](https://fix.security).
 
 ```bash
-$ brew install someengineering/tap/fixctl
+brew install someengineering/tap/fixctl
 ```
 
 ## Fix Inventory Shell
@@ -14,12 +14,12 @@ $ brew install someengineering/tap/fixctl
 [fixshell](https://github.com/someengineering/fixinventory/tree/main/fixshell) Shell to interact with [Fix Inventory](https://inventory.fix.security).
 
 ```bash
-$ brew install someengineering/tap/fixshell
+brew install someengineering/tap/fixshell
 ```
 
 ## Cloud2SQL
 [cloud2sql](https://github.com/someengineering/cloud2sql) Read infrastructure data from your cloud ☁️ and export it to a SQL database 📋.
 
 ```bash
-$ brew install someengineering/tap/cloud2sql
+brew install someengineering/tap/cloud2sql
 ```
