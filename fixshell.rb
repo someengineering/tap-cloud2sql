@@ -3,8 +3,8 @@ class Fixinventoryshell < Formula
 
   desc "Fix Inventory Shell"
   homepage ""
-  url "https://files.pythonhosted.org/packages/e5/d6/1b749a7d929dc1742020a6d73eb52ba9f4a5ac29ff7e14380bc17bae6675/fixinventoryshell-4.0.0.tar.gz"
-  sha256 "53a483cdcb4abdcbfc861d0d25e4b552bfe97e6a934176f0c7f136233c1af27a"
+  url "https://files.pythonhosted.org/packages/3c/ee/4284a3e33a4dbc088f00a2942595d99cc63c404159b80048a70d9bd46344/fixinventoryshell-4.0.1.tar.gz"
+  sha256 "c00cb0b09b609f0e963a433f3c75002a27702bf09efad6f947ee48284a04552f"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -80,13 +80,13 @@ class Fixinventoryshell < Formula
   end
 
   resource "fixinventoryclient" do
-    url "https://files.pythonhosted.org/packages/a5/37/35f542963b1663ba008c98fe1fe04ad5e0410778c682294c0c4cafc8a984/fixinventoryclient-2.0.0.tar.gz"
-    sha256 "e293843481231050ea23aaba43a874dd3a2e6fed59d5c8f5577e90d0d6bce037"
+    url "https://files.pythonhosted.org/packages/8f/aa/ec1bbd053df4cc9caafc6e0dd966edb2e6a2062657c5a5b4ce8170952f11/fixinventoryclient-2.0.1.tar.gz"
+    sha256 "c954e25df4f4f30490e5eb6dbd5fb226b526bce6f9210f81e7ae67deec213fd2"
   end
 
   resource "fixinventorylib" do
-    url "https://files.pythonhosted.org/packages/3c/1c/e6cc83aa21739b50c8512cd827b3bc5372819ef83fd4452476f6e6467a94/fixinventorylib-4.0.0.tar.gz"
-    sha256 "7414110279a2a7722b50c3e9bdd3caff7ae264750b682bc9d6ea180f91aa42b4"
+    url "https://files.pythonhosted.org/packages/ae/af/7d28c2e19eff31b0794c7f915e063d1ad5f0eb5137180beebc4dfce2bd3f/fixinventorylib-4.0.1.tar.gz"
+    sha256 "6625ec33dbca3dbcc2d94a87486287edf17e616b1bcb61678dc8c42758c2c952"
   end
 
   resource "frozendict" do
@@ -205,8 +205,8 @@ class Fixinventoryshell < Formula
   end
 
   resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/3c/6c/5d3b1c9615726a69a9a1f992e63f8fd0a2d19ae726c15eb9154fdce48217/pydantic-2.6.3.tar.gz"
-    sha256 "e07805c4c7f5c6826e33a1d4c9d47950d7eaf34868e2690f8594d2e30241f11f"
+    url "https://files.pythonhosted.org/packages/4b/de/38b517edac45dd022e5d139aef06f9be4762ec2e16e2b14e1634ba28886b/pydantic-2.6.4.tar.gz"
+    sha256 "b1704e0847db01817624a6b86766967f552dd9dbf3afba4004409f908dcc84e6"
   end
 
   resource "pydantic-core" do
@@ -225,8 +225,8 @@ class Fixinventoryshell < Formula
   end
 
   resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/d9/77/bd458a2e387e98f71de86dcc2ca2cab64489736004c80bc12b70da8b5488/python-dateutil-2.9.0.tar.gz"
-    sha256 "78e73e19c63f5b20ffa567001531680d939dc042bf7850431877645523c66709"
+    url "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz"
+    sha256 "37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3"
   end
 
   resource "pytz" do
@@ -285,8 +285,8 @@ class Fixinventoryshell < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/7a/50/7fd50a27caa0652cd4caf224aa87741ea41d3265ad13f010886167cfcc79/urllib3-2.2.1.tar.gz"
-    sha256 "d0570876c61ab9e520d776c38acbbb5b05a776d3f9ff98a5c8fd5162a444cf19"
+    url "https://files.pythonhosted.org/packages/0c/39/64487bf07df2ed854cc06078c27c0d0abc59bd27b32232876e403c333a08/urllib3-1.26.18.tar.gz"
+    sha256 "f8ecc1bba5667413457c529ab955bf8c67b45db799d159066261719e328580a0"
   end
 
   resource "wcwidth" do
