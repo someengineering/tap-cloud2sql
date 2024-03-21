@@ -1,12 +1,20 @@
 # tap
 homebrew tap for all someengineering packages.
 
-## Resoto Shell
+## Fix Inventory Shell
 
-[resotoshell](https://github.com/someengineering/resoto/tree/main/resotoshell) CLI to interact with Resoto.
+[fixctl](https://github.com/someengineering/fixctl) CLI tool to interact with [Fix](https://fix.security).
 
 ```bash
-$ brew install someengineering/tap/resotoshell 
+$ brew install someengineering/tap/fixctl
+```
+
+## Fix Inventory Shell
+
+[fixshell](https://github.com/someengineering/fixinventory/tree/main/fixshell) Shell to interact with [Fix Inventory](https://inventory.fix.security).
+
+```bash
+$ brew install someengineering/tap/fixshell
 ```
 
 ## Cloud2SQL
