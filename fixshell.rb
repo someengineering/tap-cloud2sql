@@ -2,31 +2,26 @@ class Fixinventoryshell < Formula
   include Language::Python::Virtualenv
 
   desc "Fix Inventory Shell"
-  homepage ""
-  url "https://files.pythonhosted.org/packages/e5/d6/1b749a7d929dc1742020a6d73eb52ba9f4a5ac29ff7e14380bc17bae6675/fixinventoryshell-4.0.0.tar.gz"
-  sha256 "53a483cdcb4abdcbfc861d0d25e4b552bfe97e6a934176f0c7f136233c1af27a"
+  homepage "None"
+  url "https://files.pythonhosted.org/packages/e2/51/13ae305130501fdf50320ca9cf08fd41d590b95952848606724fda7e045e/fixinventoryshell-4.0.4.tar.gz"
+  sha256 "b79dcbdb54e5cc077f26d766b8eb89da8435bc1a078746a2b69afae9b1d73d82"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
 
   resource "aiodns" do
-    url "https://files.pythonhosted.org/packages/fa/10/4de99e6e67703d8f6b10ea92a4d2a6c5b96a9c0708b75389a00203387925/aiodns-3.1.1.tar.gz"
-    sha256 "1073eac48185f7a4150cad7f96a5192d6911f12b4fb894de80a088508c9b3a99"
+    url "https://files.pythonhosted.org/packages/e7/84/41a6a2765abc124563f5380e76b9b24118977729e25a84112f8dfb2b33dc/aiodns-3.2.0.tar.gz"
+    sha256 "62869b23409349c21b072883ec8998316b234c9a9e36675756e8e317e8768f72"
   end
 
   resource "aiohttp" do
-    url "https://files.pythonhosted.org/packages/18/93/1f005bbe044471a0444a82cdd7356f5120b9cf94fe2c50c0cdbf28f1258b/aiohttp-3.9.3.tar.gz"
-    sha256 "90842933e5d1ff760fae6caca4b2b3edba53ba8f4b71e95dacf2818a2aca06f7"
+    url "https://files.pythonhosted.org/packages/7e/0b/4235b25496c741f4c9f75a94951fbc15c48537349a03448687fb226256ef/aiohttp-3.9.4.tar.gz"
+    sha256 "6ff71ede6d9a5a58cfb7b6fffc83ab5d4a63138276c771ac91ceaaddf5459644"
   end
 
   resource "aiosignal" do
     url "https://files.pythonhosted.org/packages/ae/67/0952ed97a9793b4958e5736f6d2b346b414a2cd63e82d05940032f45b32f/aiosignal-1.3.1.tar.gz"
     sha256 "54cd96e15e1649b75d6c87526a6ff0b6c1b0dd3459f43d9ca11d48c339b68cfc"
-  end
-
-  resource "annotated-types" do
-    url "https://files.pythonhosted.org/packages/67/fe/8c7b275824c6d2cd17c93ee85d0ee81c090285b6d52f4876ccc47cf9c3c4/annotated_types-0.6.0.tar.gz"
-    sha256 "563339e807e53ffd9c267e99fc6d9ea23eb8443c08f112651963e24e22f84a5d"
   end
 
   resource "attrs" do
@@ -80,18 +75,18 @@ class Fixinventoryshell < Formula
   end
 
   resource "fixinventoryclient" do
-    url "https://files.pythonhosted.org/packages/a5/37/35f542963b1663ba008c98fe1fe04ad5e0410778c682294c0c4cafc8a984/fixinventoryclient-2.0.0.tar.gz"
-    sha256 "e293843481231050ea23aaba43a874dd3a2e6fed59d5c8f5577e90d0d6bce037"
+    url "https://files.pythonhosted.org/packages/8f/aa/ec1bbd053df4cc9caafc6e0dd966edb2e6a2062657c5a5b4ce8170952f11/fixinventoryclient-2.0.1.tar.gz"
+    sha256 "c954e25df4f4f30490e5eb6dbd5fb226b526bce6f9210f81e7ae67deec213fd2"
   end
 
   resource "fixinventorylib" do
-    url "https://files.pythonhosted.org/packages/3c/1c/e6cc83aa21739b50c8512cd827b3bc5372819ef83fd4452476f6e6467a94/fixinventorylib-4.0.0.tar.gz"
-    sha256 "7414110279a2a7722b50c3e9bdd3caff7ae264750b682bc9d6ea180f91aa42b4"
+    url "https://files.pythonhosted.org/packages/ee/be/915c324ede3b4294f96d17c5eec61a8b8e368ef01d22a1ffa0e7bac6e4f9/fixinventorylib-4.0.4.tar.gz"
+    sha256 "8a30294feb732b2b8cfe787c5038e43803c112baeef4f2dea5cac9867550ffd8"
   end
 
   resource "frozendict" do
-    url "https://files.pythonhosted.org/packages/8d/af/ea169c16f17f1c11a3fb2db3d56ca51cfec6b9bce8765cab58eed5ad1a49/frozendict-2.4.0.tar.gz"
-    sha256 "c26758198e403337933a92b01f417a8240c954f553e1d4b5e0f8e39d9c8e3f0a"
+    url "https://files.pythonhosted.org/packages/ab/bf/7c17e926b7b0f509c3b90abb73e151042b35737caa81af3f404556b0fca1/frozendict-2.4.1.tar.gz"
+    sha256 "1b32eb2f30bb734b7a699ee7003c86f81964f1c3b6e0e0f18efcbbdeb5b220bf"
   end
 
   resource "frozenlist" do
@@ -100,13 +95,13 @@ class Fixinventoryshell < Formula
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/bf/3f/ea4b9117521a1e9c50344b909be7886dd00a519552724809bb1f486986c2/idna-3.6.tar.gz"
-    sha256 "9ecdbbd083b06798ae1e86adcbfe8ab1479cf864e4ee30fe4e46a003d12491ca"
+    url "https://files.pythonhosted.org/packages/21/ed/f86a79a07470cb07819390452f178b3bef1d375f2ec021ecfc709fc7cf07/idna-3.7.tar.gz"
+    sha256 "028ff3aadf0609c1fd278d8ea3089299412a7a8b9bd005dd08b9f8285bcb5cfc"
   end
 
   resource "inflect" do
-    url "https://files.pythonhosted.org/packages/9f/90/1d0a889847fdce963ebe9684de24a749e4fad627bf595e9f0d32730f85a8/inflect-7.0.0.tar.gz"
-    sha256 "63da9325ad29da81ec23e055b41225795ab793b4ecb483be5dc1fa363fd4717e"
+    url "https://files.pythonhosted.org/packages/5e/82/6f2dac9cc13c9521edbc54ff4154b298c493c7e3b3fa3c7da6b8f57132fb/inflect-7.2.0.tar.gz"
+    sha256 "32feacfacfcae2f22e6fccdea10f0ddf26a638fac434d0dddaafbca0034f3784"
   end
 
   resource "isodate" do
@@ -120,8 +115,8 @@ class Fixinventoryshell < Formula
   end
 
   resource "jaraco.context" do
-    url "https://files.pythonhosted.org/packages/7c/b4/fa71f82b83ebeed95fe45ce587d6cba85b7c09ef3d9f61602f92f45e90db/jaraco.context-4.3.0.tar.gz"
-    sha256 "4dad2404540b936a20acedec53355bdaea223acb88fd329fa6de9261c941566e"
+    url "https://files.pythonhosted.org/packages/c9/60/e83781b07f9a66d1d102a0459e5028f3a7816fdd0894cba90bee2bbbda14/jaraco.context-5.3.0.tar.gz"
+    sha256 "c2f67165ce1f9be20f32f650f25d8edfc1646a8aeee48ae06fb35f90763576d2"
   end
 
   resource "jaraco.functools" do
@@ -160,8 +155,8 @@ class Fixinventoryshell < Formula
   end
 
   resource "networkx" do
-    url "https://files.pythonhosted.org/packages/c4/80/a84676339aaae2f1cfdf9f418701dd634aef9cc76f708ef55c36ff39c3ca/networkx-3.2.1.tar.gz"
-    sha256 "9f1bb5cf3409bf324e0a722c20bdb4c20ee39bf1c30ce8ae499c8502b0b5e0c6"
+    url "https://files.pythonhosted.org/packages/04/e6/b164f94c869d6b2c605b5128b7b0cfe912795a87fc90e78533920001f3ec/networkx-3.3.tar.gz"
+    sha256 "0c127d8b2f4865f59ae9cb8aafcd60b5c70f3241ebd66f7defad7c4ab90126c9"
   end
 
   resource "parsy" do
@@ -200,18 +195,8 @@ class Fixinventoryshell < Formula
   end
 
   resource "pycparser" do
-    url "https://files.pythonhosted.org/packages/5e/0b/95d387f5f4433cb0f53ff7ad859bd2c6051051cebbb564f139a999ab46de/pycparser-2.21.tar.gz"
-    sha256 "e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206"
-  end
-
-  resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/3c/6c/5d3b1c9615726a69a9a1f992e63f8fd0a2d19ae726c15eb9154fdce48217/pydantic-2.6.3.tar.gz"
-    sha256 "e07805c4c7f5c6826e33a1d4c9d47950d7eaf34868e2690f8594d2e30241f11f"
-  end
-
-  resource "pydantic-core" do
-    url "https://files.pythonhosted.org/packages/77/3f/65dbe5231946fe02b4e6ea92bc303d2462f45d299890fd5e8bfe4d1c3d66/pydantic_core-2.16.3.tar.gz"
-    sha256 "1cac689f80a3abab2d3c0048b29eea5751114054f032a941a32de4c852c59cad"
+    url "https://files.pythonhosted.org/packages/1d/b2/31537cf4b1ca988837256c910a668b553fceb8f069bedc4b1c826024b52c/pycparser-2.22.tar.gz"
+    sha256 "491c8be9c040f5390f5bf44a5b07752bd07f56edf992381b05c701439eec10f6"
   end
 
   resource "Pygments" do
@@ -225,8 +210,8 @@ class Fixinventoryshell < Formula
   end
 
   resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/d9/77/bd458a2e387e98f71de86dcc2ca2cab64489736004c80bc12b70da8b5488/python-dateutil-2.9.0.tar.gz"
-    sha256 "78e73e19c63f5b20ffa567001531680d939dc042bf7850431877645523c66709"
+    url "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz"
+    sha256 "37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3"
   end
 
   resource "pytz" do
@@ -260,13 +245,13 @@ class Fixinventoryshell < Formula
   end
 
   resource "typeguard" do
-    url "https://files.pythonhosted.org/packages/90/fb/e5d68ef7b0bca67d06bb4a15f9317decbd1a3f323c3d89221d2ca4c11512/typeguard-4.1.5.tar.gz"
-    sha256 "ea0a113bbc111bcffc90789ebb215625c963411f7096a7e9062d4e4630c155fd"
+    url "https://files.pythonhosted.org/packages/6e/0e/96ec359939521f8c3e6c7b69526afab96fafe0520b5e1b890e061a66abc9/typeguard-4.2.1.tar.gz"
+    sha256 "c556a1b95948230510070ca53fa0341fb0964611bd05d598d87fb52115d65fee"
   end
 
   resource "typing-extensions" do
-    url "https://files.pythonhosted.org/packages/16/3a/0d26ce356c7465a19c9ea8814b960f8a36c3b0d07c323176620b7b483e44/typing_extensions-4.10.0.tar.gz"
-    sha256 "b0abd7c89e8fb96f98db18d86106ff1d90ab692004eb746cf6eda2682f91b3cb"
+    url "https://files.pythonhosted.org/packages/f6/f3/b827b3ab53b4e3d8513914586dcca61c355fa2ce8252dea4da56e67bf8f2/typing_extensions-4.11.0.tar.gz"
+    sha256 "83f085bd5ca59c80295fc2a82ab5dac679cbe02b9f33f7d83af68e241bea51b0"
   end
 
   resource "typish" do
@@ -285,8 +270,8 @@ class Fixinventoryshell < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/7a/50/7fd50a27caa0652cd4caf224aa87741ea41d3265ad13f010886167cfcc79/urllib3-2.2.1.tar.gz"
-    sha256 "d0570876c61ab9e520d776c38acbbb5b05a776d3f9ff98a5c8fd5162a444cf19"
+    url "https://files.pythonhosted.org/packages/0c/39/64487bf07df2ed854cc06078c27c0d0abc59bd27b32232876e403c333a08/urllib3-1.26.18.tar.gz"
+    sha256 "f8ecc1bba5667413457c529ab955bf8c67b45db799d159066261719e328580a0"
   end
 
   resource "wcwidth" do
