@@ -1,18 +1,18 @@
 class Fixctl < Formula
     desc "fixctl is a command line tool for searching the Fix Security graph."
     homepage "https://fix.security/"
-    version "0.0.5"
+    version "0.0.6"
     license "AGPL-3.0"
   
     if OS.mac?
-        url "https://github.com/someengineering/fixctl/releases/download/0.0.5/fixctl-macos-universal-0.0.5"
-        sha256 "6c21aed8258bae116f4f77599185c697175e92f965d49da9911dd857cae78d63"
+        url "https://github.com/someengineering/fixctl/releases/download/0.0.6/fixctl-macos-universal-0.0.6"
+        sha256 "2ab4993b03cbcc78e2c1f15e532c5204985fdfb4774b6043d5169a55c6739d2c"
     elsif OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/someengineering/fixctl/releases/download/0.0.5/fixctl-linux-amd64-0.0.5"
-        sha256 "7eff2a119e7a6caeb97f8924193ef08dca1a1b4503dd3b774f3b660cb33a9679"
+        url "https://github.com/someengineering/fixctl/releases/download/0.0.6/fixctl-linux-amd64-0.0.6"
+        sha256 "1c593e3c3d12f8caaca67def6fb9cc2ebf504f7577e03bab2414bf7f010d0fd6"
     elsif OS.linux? && Hardware::CPU.arm?
-        url "https://github.com/someengineering/fixctl/releases/download/0.0.5/fixctl-linux-arm64-0.0.5"
-        sha256 "81215b17a6d9c6c79bb6ddef4c6ed4d991653c08d89f9a3620cd31ab748f36e5"
+        url "https://github.com/someengineering/fixctl/releases/download/0.0.6/fixctl-linux-arm64-0.0.6"
+        sha256 "e66c59738fc1c0d8dc148e19e5ed632ad70aa235246621ed298c24c60ec0abd6"
     end
   
     def install
